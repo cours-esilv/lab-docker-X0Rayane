@@ -1,0 +1,2 @@
+docker exec -it tag-flask-app /bin/bash
+cat /etc/*release
