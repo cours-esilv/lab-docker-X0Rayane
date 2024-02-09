@@ -1,0 +1,3 @@
+docker stop my-flask-app
+docker rm my-flask-app
+docker run -d -p 8080:8080 --name my-flask-app -e CURRENT_ENVIRONMENT=production flask-app
