@@ -1,0 +1,14 @@
+# Use Nginx as base image
+FROM nginx:alpine
+
+# Copy the HTML files to Nginx web root
+COPY . /usr/share/nginx/html
+
+# Set the environment variable for back-end URL
+ENV WS_BACK_URL=http://backend:8080
+
+# Expose port 80
+EXPOSE 80
+
+# Start Nginx server with exec form entrypoint
+ENTRYPOINT ["nginx", "-g", "daemon off;"]
