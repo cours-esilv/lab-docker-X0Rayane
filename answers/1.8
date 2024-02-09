@@ -1,2 +1,2 @@
-docker run -p 5000:5000 ryuiji/flask-app:tagname
-docker run -d -p 5000:5000 ryuiji/flask-app:tagname
+docker run -p 5000:5000 -e CURRENT_ENVIRONMENT=rayane ryuiji/flask-app:tagname
+docker run -d -p 5000:5000 -e CURRENT_ENVIRONMENT=rayane ryuiji/flask-app:tagname
